@@ -1,0 +1,91 @@
+@import "https://unpkg.com/open-props"; 
+@import "https://unpkg.com/open-props/normalize.min.css"; 
+
+body {
+  display: flex;
+  background-image: var(--gradient-8)
+}
+
+header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--blue-0);
+}
+
+.aspect-demos {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--size-4);
+  padding: var(--size-10);
+  justify-content: space-around;
+}
+
+.aspect-demos > div {
+  block-size: var(--size-12);
+  max-inline-size: var(--max-inline-body);
+  background-color: var(--surface-1);
+  border-width: var(--border-size-3);
+  border-color: var(--surface-4);
+  box-shadow: var(--shadow-3);
+  display: grid;
+  place-content: center;
+ 
+}
+
+.hero {
+  padding: var(--size-10);
+  display: grid;
+  gap: var(--size-5);
+}
+
+.hero-message {
+  display: grid;
+  grid-template-columns: max-content;
+  color: var(--gray-9);
+  line-height: var(--font-lineheight-0);
+}
+
+.hero-message > div:last-child {
+  color: var(--indigo-7);
+}
+
+.under-hero {
+  color: var(--gray-7);
+  font-size: var(--font-size-4);
+  margin-block-end: var(--size-3);
+}
+
+.button-list {
+  display: flex;
+  gap: var(--size-3);
+}
+
+button {
+  background: white;
+  color: var(--indigo-8);
+  font-size: var(--font-size-3);
+  padding-inline: var(--size-8);
+  padding-block: var(--size-3);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+button.primary {
+  background: var(--indigo-8);
+  text-shadow: 0 1px 0 var(--indigo-9);
+  color: white;
+}
+
+button.primary:hover {
+  background: var(--indigo-7);
+}
+
+.promo-art {
+  align-self: stretch;
+}
+
+.promo-art > img {
+  block-size: 100%;
+  object-fit: cover;
+}
